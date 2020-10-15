@@ -13,4 +13,7 @@ RUN apk add npm
 RUN npm install -g --unsafe-perm homebridge
 RUN npm install -g --unsafe-perm homebridge-config-ui-x
 
+EXPOSE 8581
+EXPOSE 51856
+
 CMD [ "homebridge" ]
