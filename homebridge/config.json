@@ -12,6 +12,9 @@
     "51856/tcp": 51856
   },
   "webui": "http://[HOST]:[PORT:8581]",
+  "options": {
+    "name": ""
+  },
   "schema": {
     "device": "str"
   }
