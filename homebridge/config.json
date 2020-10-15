@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "slug": "homebridge",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
-  "description": "Expose a web frontend to control my coffee maker",
+  "description": "Bringing HomeKit support where there is none",
   "startup": "before",
   "boot": "auto",
   "ports": {
