@@ -7,15 +7,25 @@
   "url": "https://github.com/alexohneander/homebridge-homeassistant-addon",
   "startup": "before",
   "boot": "auto",
+  "advanced": true,
+  "panel_icon": "mdi:buffer",
+  "panel_title": "Homebridge",
+  "ingress": true,
   "ports": {
     "8581/tcp": 8581,
     "51856/tcp": 51856
   },
   "webui": "http://[HOST]:[PORT:8581]",
   "options": {
-    "name": ""
+    "name": "",
+    "server": {
+      "tcp_forwarding": false
+    }
   },
   "schema": {
-    "device": "str"
+    "device": "str",
+    "server": {
+      "tcp_forwarding": "bool"
+    }
   }
 }
