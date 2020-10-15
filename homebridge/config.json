@@ -1,16 +1,18 @@
 {
   "name": "Homebridge",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "slug": "homebridge",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "description": "Bringing HomeKit support where there is none",
   "url": "https://github.com/alexohneander/homebridge-homeassistant-addon",
-  "startup": "before",
+  "startup": "services",
   "boot": "auto",
   "advanced": true,
   "panel_icon": "mdi:buffer",
   "panel_title": "Homebridge",
   "ingress": true,
+  "hassio_api": true,
+  "hassio_role": "default",
   "ports": {
     "8581/tcp": 8581,
     "51856/tcp": 51856
