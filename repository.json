@@ -1,5 +1,5 @@
 {
-  "name": "Hass.IO example add-on repository",
+  "name": "HomeBridge for HomeAssistant",
   "url": "https://home-assistant.io/",
-  "maintainer": "HomeAssistant <info@home-assistant.io>"
+  "maintainer": "Alex Wellnitz <moin@wellnitz-alex.de>"
 }
