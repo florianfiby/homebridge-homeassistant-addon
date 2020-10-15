@@ -15,5 +15,4 @@
   "schema": {
     "device": "str"
   }
-  // "image": "hub/{arch}-homebridge"
 }
