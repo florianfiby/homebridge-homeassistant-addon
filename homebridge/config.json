@@ -14,6 +14,6 @@
   },
   "schema": {
     "device": "str"
-  },
-  "image": "hub/{arch}-homebridge"
+  }
+  // "image": "hub/{arch}-homebridge"
 }
