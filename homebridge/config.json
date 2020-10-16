@@ -11,6 +11,7 @@
   "panel_icon": "mdi:buffer",
   "panel_title": "Homebridge",
   "ingress": true,
+  "ingress_port": 8581,
   "hassio_api": true,
   "hassio_role": "default",
   "ports": {
