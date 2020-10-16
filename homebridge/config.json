@@ -1,34 +1,52 @@
 {
   "name": "Homebridge",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "slug": "homebridge",
-  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
-  "description": "Bringing HomeKit support where there is none",
+  "description": "HomeKit support for your Home Assistant instance using Homebridge",
   "url": "https://github.com/alexohneander/homebridge-homeassistant-addon",
-  "startup": "services",
+  "startup": "application",
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armhf",
+    "i386"
+  ],
   "boot": "auto",
-  "advanced": true,
-  "panel_icon": "mdi:buffer",
-  "panel_title": "Homebridge",
-  "ingress": true,
-  "ingress_port": 8581,
   "hassio_api": true,
-  "hassio_role": "default",
+  "homeassistant_api": true,
+  "host_network": true,
+  "privileged": [],
   "ports": {
     "8581/tcp": 8581,
     "51856/tcp": 51856
   },
-  "webui": "http://[HOST]:[PORT:8581]",
+  "map": [
+    "config:rw",
+    "ssl"
+  ],
   "options": {
-    "name": "",
-    "server": {
-      "tcp_forwarding": false
-    }
+    "log_level": "info",
+    "avahi_interfaces": "",
+    "avahi_hostname": "",
+    "avahi_domainname": "local",
+    "enable_ipv6": true,
+    "insecure": false,
+    "packages": [],
+    "init_commands": [],
+    "plugins": []
   },
   "schema": {
-    "device": "str",
-    "server": {
-      "tcp_forwarding": "bool"
-    }
+    "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)",
+    "avahi_interfaces": "str",
+    "avahi_hostname": "str",
+    "avahi_domainname": "str",
+    "enable_ipv6": "bool",
+    "insecure": "bool",
+    "packages": ["str"],
+    "init_commands": ["str"],
+    "plugins": ["str"]
+  },
+  "environment": {
+    "LOG_FORMAT": "{LEVEL}: {MESSAGE}"
   }
 }
