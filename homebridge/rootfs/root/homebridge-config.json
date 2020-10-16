@@ -1,0 +1,20 @@
+{
+    "bridge": {
+        "name": "Homebridge 73E5",
+        "username": "0E:72:EA:9F:73:E5",
+        "port": 51856,
+        "pin": "206-57-860"
+    },
+    "accessories": [],
+    "platforms": [
+        {
+            "name": "Config",
+            "port": 8581,
+            "auth": "form",
+            "theme": "dark-mode",
+            "tempUnits": "c",
+            "lang": "auto",
+            "platform": "config"
+        }
+    ]
+}

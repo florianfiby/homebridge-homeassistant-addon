@@ -14,6 +14,9 @@ RUN npm install -g --unsafe-perm homebridge
 RUN npm install -g --unsafe-perm homebridge-config-ui-x
 RUN npm install -g --unsafe-perm homebridge-ring
 
+# Copy root filesystem
+COPY rootfs /
+
 EXPOSE 8581
 EXPOSE 51856
 
