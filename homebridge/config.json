@@ -4,7 +4,7 @@
   "slug": "homebridge",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "description": "Bringing HomeKit support where there is none",
-  "url": "https://github.com/alexohneander/homebridge-homeassistant-addon",
+  "url": "https://github.com/florianfiby/homebridge-homeassistant-addon",
   "startup": "services",
   "boot": "auto",
   "advanced": true,
