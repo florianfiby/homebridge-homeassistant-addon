@@ -1,6 +1,6 @@
 {
   "name": "Homebridge",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "slug": "homebridge",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "description": "Bringing HomeKit support where there is none",
