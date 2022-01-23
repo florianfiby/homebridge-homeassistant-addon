@@ -13,6 +13,7 @@ RUN apk add npm
 RUN npm install -g --unsafe-perm homebridge
 RUN npm install -g --unsafe-perm homebridge-config-ui-x
 RUN npm install -g --unsafe-perm homebridge-ring
+RUN npm install -g --unsafe-perm homebridge-alexa
 
 # Copy root filesystem
 COPY rootfs /
