@@ -15,6 +15,42 @@
             "tempUnits": "c",
             "lang": "auto",
             "platform": "config"
+        },
+        {
+            "platform": "HomeAssistant",
+            "name": "HomeAssistant",
+            "host": "",
+            "password": "",
+            "supported_types": [
+                "binary_sensor",
+                "climate",
+                "cover",
+                "fan",
+                "garage_door",
+                "device_tracker",
+                "input_boolean",
+                "light",
+                "lock",
+                "media_player",
+                "rollershutter",
+                "sensor",
+                "scene",
+                "switch"
+            ],
+            "default_visibility": "visible",
+            "verify_ssl": false
+        },
+        {
+            "name": "Alexa",
+            "username": "",
+            "password": "",
+            "pin": "",
+            "routines": false,
+            "blind": false,
+            "door": false,
+            "debug": false,
+            "deviceListHandling": "allow",
+            "platform": "Alexa"
         }
     ]
 }
