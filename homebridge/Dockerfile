@@ -14,6 +14,7 @@ RUN npm install -g --unsafe-perm homebridge
 RUN npm install -g --unsafe-perm homebridge-config-ui-x
 RUN npm install -g --unsafe-perm homebridge-ring
 RUN npm install -g --unsafe-perm homebridge-alexa
+RUN npm install -g --unsafe-perm homebridge-homeassistant-saaak
 
 # Copy root filesystem
 COPY rootfs /
